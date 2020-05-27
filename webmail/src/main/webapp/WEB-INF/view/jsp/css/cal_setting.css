@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+div#cal_sub_data {
+    max-height: 280px;
+    overflow: auto;
+}
+div#cal_sub_data > table > thead >tr >th {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.back_to_cal {
+  float: left;
+}
+.cal_setting_1 table {
+table-layout: fixed;
+  font-size: 13px;
+  font-family: arial;
+  border-spacing: 0px;
+}
+select.cal_setting_select {
+  width: 92px;
+  padding: 1px;
+}
+.cal_setting_1 table tr{}
+.cal_setting_1 table tr td{}
+.cal_setting_1 table tbody tr td {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+.cal_setting_1 table tbody tr {
+  border: 1px solid #ccc;
+}
+.cal_heding{ font-weight:bold;  width:20%;}
+.clear{ clear:both;}
+.tab_calendar_setting {}
+.tab_calendar_setting >ul{ margin:0px; padding:0px;}
+.tab_calendar_setting >ul >li{ float: left; cursor:pointer;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 13px;
+  font-family: arial;
+  background: #ccc;
+  margin-right: 11px;
+  padding-left: 12px;
+  padding-right: 12px;}
+  li.active_cal {
+  background: #773232 !important;
+  color: #fff;
+}
+.share_this_cal{}
+.edite_notification{}
+.cal_notification{}
+.text_cal_notifi {
+  width: 27px;
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-bottom: 6px;
+}
+.cal_row{}
+.cal_notification {
+  float: left;
+  margin-left: 10px;max-height: 200px;
+  overflow: auto;  width: 400px;
+}
+.cal_default{ display:block; float:left;}
+select.cal_email {
+  margin-right: 4px;
+}
+select.cal_time {
+  margin-left: 4px;
+}
+.cal_set_del {
+  color: #187DEF; cursor:pointer;  position: relative;
+  top: 5px;
+  left: 10px;
+}
+.cal_setting_1 {
+  margin-left: 19px;
+  margin-right: 19px;
+}
+span.add_notification {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 5px;
+  background: #EAEAEA;
+  border: 1px solid #ccc; cursor:pointer;
+}
+.cal_setting_img >img{ margin-right:10px;  margin-bottom: 6px;}
+.cal_setting {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  width: 762px;  display: none;
+  margin: 0 auto;
+  top: 101px;
+  border: 1px solid #ccc;
+}
+.cal_showdetail{
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  width: 762px;  display: none;
+  margin: 0 auto;
+  top: 101px;
+  border: 1px solid #ccc;
+}
+.cal_showdetail_sub{
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  width: 762px;  display: none;
+  margin: 0 auto;
+  top: 101px;
+  border: 1px solid #ccc;
+}
+input.cal_setting_input {
+  width: 279px;
+  margin-bottom: 9px;
+  height: 23px;
+}
+.cal_setting >h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  padding: 8px;
+  background: #ccc;
+  /* background: #ccc; */
+  font-size: 15px;
+  background: #ddd9d9;
+  background: -moz-linear-gradient(top, #EDEDED 2%, #EDEDED 50%, #ddd9d9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#ddd9d9), color-stop(50%,#EDEDED), color-stop(100%,#ddd9d9));
+  background: -webkit-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -o-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -ms-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: linear-gradient(to bottom, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd9d9', endColorstr='#ddd9d9',GradientType=0 );
+  border-bottom: 1px solid #Ccc;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.cal_showdetail >h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  padding: 8px;
+  background: #ccc;
+  /* background: #ccc; */
+  font-size: 15px;
+  background: #ddd9d9;
+  background: -moz-linear-gradient(top, #EDEDED 2%, #EDEDED 50%, #ddd9d9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#ddd9d9), color-stop(50%,#EDEDED), color-stop(100%,#ddd9d9));
+  background: -webkit-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -o-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -ms-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: linear-gradient(to bottom, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd9d9', endColorstr='#ddd9d9',GradientType=0 );
+  border-bottom: 1px solid #Ccc;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.cal_showdetail_sub >h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  padding: 8px;
+  background: #ccc;
+  /* background: #ccc; */
+  font-size: 15px;
+  background: #ddd9d9;
+  background: -moz-linear-gradient(top, #EDEDED 2%, #EDEDED 50%, #ddd9d9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#ddd9d9), color-stop(50%,#EDEDED), color-stop(100%,#ddd9d9));
+  background: -webkit-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -o-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -ms-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: linear-gradient(to bottom, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd9d9', endColorstr='#ddd9d9',GradientType=0 );
+  border-bottom: 1px solid #Ccc;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 14px;
+}

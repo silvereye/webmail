@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.new_show_hide{ padding-left:1px !important;}
+.account_new_folder{width: 350px;
+background: #F0EFEF;
+z-index: 14;
+margin-top: 300px !important;
+ right: 36%;
+    top: -16%;position: absolute;
+
+/* float: left; */
+margin: 0 auto;
+padding-bottom: 20px;
+padding-top: 20px;
+border: 1px solid #ccc;-webkit-box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75); display:none;}
+
+.account_edit_folder{width: 350px;
+background: #F0EFEF;
+z-index: 14;
+margin-top: 300px !important;
+right: 36%;
+top: -16%;position: absolute;
+
+/* float: left; */
+margin: 0 auto;
+padding-bottom: 20px;
+padding-top: 20px;
+border: 1px solid #ccc;-webkit-box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 20px -4px rgba(0,0,0,0.75); display:none;}
+
+.folder_icon {
+outline: 0px;
+/* margin-bottom: 10px !important; */
+/* margin-top: 10px !important; */
+/* margin-left: 11px !important; */
+padding: 4px;
+width: 288px;
+margin-left: 23px !important;
+display: block;
+float: none !important;
+}
+.account_new_folder >select{margin: 0 auto;
+display: block; outline:0px;
+width: 303px;
+padding: 5px;
+margin-top: 10px;}
+.account_new_folder >.search_button{font-size: 12px !important;}
+.account_edit_folder >.search_button{font-size: 12px !important;}
+.create_folder{float: left;
+margin-left: 10px;
+margin-top: 15px;
+text-align: center;
+color: #fff;
+line-height: 29px;
+cursor: pointer;}
+.new_folder_create{ display:none;}
+

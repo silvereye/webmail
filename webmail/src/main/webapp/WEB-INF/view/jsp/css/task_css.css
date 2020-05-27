@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+.reminder_time {
+   width: 76px !important;
+}
+table.new_reminder select {
+width: 126px !important;
+margin-right: 5px;
+margin-bottom: 4px;
+margin-top: 4px;
+}
+
+.dymaic_am {
+position: absolute;
+display: none;
+height: 162px;
+overflow: scroll;
+background-color: #fff;
+z-index: 19;
+font-size: 13px;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid #ccc;
+display: none;
+}
+.amvalue {
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.task_check_box >img {
+ margin-left: -10px !important;
+} 
+.active_tasks, .active_tasks_new{ background:#e1e1e1;}
+.cancel_cal_new, .save_cal_new {
+		  float: right;
+		  padding: 7px;
+		  background: #F0F0F0;
+		  margin-left: 10px;
+		  font-size: 12px;
+		  width: 78px !important;
+		  cursor: pointer;
+		  text-align: center;
+		  border-radius: 3px;
+		  color: #fff;
+		  border: 1px solid #ccc;
+		  cursor: pointer;
+}
+
+.calender_pop_new{ width: 617px;
+padding-bottom: 14px;
+background: #E7E7E7;
+position: absolute;
+z-index: 9;
+display:block;
+margin: 0 auto;
+left: 37%; display:none;
+margin-top: 8%;
+border: 1px solid #ccc;
+border-radius: 3px;}
+.calender_pop_new >h1{font-size: 14px;
+padding-left: 10px;
+font-weight: normal;
+border-bottom: 1px Solid #ccc;
+margin: 0px;
+background: #fff;
+padding: 6px;
+color: #AD2222;
+font-weight: bold;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+margin-bottom: 8px;}
+.calender_pop_new >input{padding: 10px;
+width: 94%;
+margin-left: 10px; outline:0px;
+margin-bottom: 13px;}
+.calender_pop_new >button{padding: 5px;
+float: right;
+margin-left: -2px;
+margin-right: 13px;
+font-size: 12px;
+border: 0px;
+background: #f5f5f5;
+border: 1px solid #ccc;
+width: 71px;border-radius: 3px; cursor:pointer;}
+.calender_pop_new >button:hover{background: #C01A1A;color: #fff;}
+.right_con_part_pop {
+ /* margin-top: 95px; */
+ overflow-y: auto;
+ overflow-x: hidden;
+ padding-left: 2px;
+ padding-right: 10px;
+ position: absolute;
+ /* height: 100%; */
+ bottom: 0px;
+ top: 10px;
+ right: 0px;
+ left: 0px;
+}
+span.vol-box {
+ display: block;
+ position: relative;
+ right: 11px;
+}
+#volume .control .knob {
+ position: absolute;
+ top: 0;
+ right: -5px;
+ height: 30px;
+ width: 10px;
+ background: #FFF;
+ /* box-shadow: 0 0 1px #000; */
+}
+
+.top_task{float: left;height: 37px;width: 100%;background: #f1f1f1;border-bottom: 1px solid #ccc;}
+.task_content{overflow: auto;
+width: 100%;}
+.task_content >table{ table-layout: fixed;width: 100%;font-size: 12px; border-spacing:0px;z-index: 6;}
+.task_check_box{width: 54px !important;text-align: center;}
+.task_check_box >img{margin-left: -29px !important;}
+.task_content >table >tbody >tr >td{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+padding-bottom: 5px;
+padding-top: 5px;/* ;width: 11%; */border-bottom: 1px solid#ccc;
+/* text-align: center; */}
+.task_content >table >tbody >tr.task_heading >td{border-bottom: 1px solid #ccc;}
+.table_heading{position: absolute;
+top: 38px;
+background: #646464;
+color: #fff;}
+#widget {
+width: 100% !important; height:auto !important;
+overflow: auto;
+}
+/*-===== LEFT TAB ========*/
+.my_tasks {
+padding: 6px;
+background: #E8E8E8;
+position: relative;
+color: #000;
+background: url(../images/cal-open.png);
+/* border-top: 1px solid #ccc; */
+font-size: 12px;
+background-repeat: no-repeat;
+background-position: 10px;
+padding-left: 24px;
+}
+.my_tasks_content {
+height: 154px;
+overflow: auto;
+}
+.left_tab_content ul li {
+margin: 0px;  list-style-type: none;
+/* line-height: 23px; */
+padding: 9px;
+padding-bottom: 1px;
+height: 19px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+margin-bottom: 1px;
+padding-right: 0px;
+}
+.todo_tasks {
+width: 15px;
+height: 17px;
+background:url(../images/star-flag.png);
+float: left;
+margin-top: -3px;
+}
+.icon_tasks {
+width: 16px;
+height: 15px;
+background: url(../images/tasks_icon_new.png);
+float: left;
+margin-top: -1px;
+}
+.my_tasks_content >ul >li >span {
+/* float: left; */
+line-height: 12px;
+width: 116px;
+margin-left: 10px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.bottom_arrow {
+background: url(../images/cal-close.png) !important;
+background-repeat: no-repeat !important;
+background-position: 10px !important;
+}
+table.table_content>tbody >tr:hover{ /* background: #C21B1B;
+cursor: pointer;
+color: #fff; */background: #E8E8E8;
+cursor: pointer;
+color: #181616;}
+.task_icon{ float: left;
+/* background: url(../images/task_icon.png); */
+background: url(../images/new_delet.png);
+height: 18px;
+width: 17px;
+color: #000;
+margin: 0 auto;
+display: block;
+margin-left: 6px;
+background: url(../images/new_delet.png);
+background-repeat: no-repeat;
+background-position: right -36px;
+/* border-radius: 8px; */
+font-size: 10px;
+line-height: 18px;}
+table.table_content{position: relative;
+top: 30px;z-index: 1;}
+table.table_content>tbody >tr:hover >.task_check_box >.task_icon{float: left;
+/*background:url(../images/task_icon_white.png);*/
+background: url(../images/new_delet.png);
+background-position: right -36px;
+background-repeat: no-repeat;
+height: 18px;
+width: 17px;
+margin: 0 auto;
+display: block; color:#fff;
+margin-left: 6px;
+font-size: 10px;
+line-height: 18px;}
+.task_date{padding: 6PX;
+width: 165px;
+outline: 0px;}
+/*************============== PROGRESS BAR *********/
+#volume .control {
+position: absolute;
+top: 0;
+left: 0;
+width: 125px;
+height: 30px;
+background: #3498db;
+box-shadow: inset 0 0 2px #000;
+}
+#volume {
+width: 219px;
+height: 30px;
+position: absolute;
+cursor: pointer;
+background: #444;
+top: 50%;
+left: 50%;
+/* margin-left: -125px; */
+margin-top: -9px;
+box-shadow: inset 0 0 15px #000;
+left: 7px;
+top: 11px;
+}
+.#volume .control .knob {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 30px;
+  width: 5px;
+  background: #FFF;
+  box-shadow: 0 0 1px #000;
+}
+#volume .vol-box {
+font-size: 14px;
+display: block;
+text-align: center;
+margin-top: 50px;
+}
+.vol-box{ float:right;float: right;
+padding: 6px;
+border: 1px solid #ccc;}
+.gen_content >table >tbody>tr>td {
+position: relative;
+}
+.bar_height{ height:33px;}
+
+.delete_all_tasks {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+height: 29px;
+/* width: 42px; */
+/* padding: 0 .6em; */
+font-size: 1em;
+white-space: nowrap;
+cursor: pointer;
+border: 1px solid #ccc;
+background: #EDEDED;
+font-size: 11px;
+padding: 7px;
+float: left;
+margin-left: 11px;
+margin-top: 3px;
+border-radius: 3px;
+color: #4D4A4A; display:none;
+}
+.delete_all_tasks >.create_cal_icon_1{ background:url(../images/tool_delete.png);height: 16px;
+width: 14px;
+margin-top: -2px;}
+.delete_all_tasks:hover{background-color: #d14836;background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
+background-image: linear-gradient(top,#dd4b39,#d14836);color: #fff;border: 1px solid transparent;border: 1px solid transparent;}
+.delete_all_tasks:hover >.create_cal_icon_1{ background:url(../images/delet_white.png);height: 16px;
+width: 14px;
+margin-top: -2px; background-repeat:no-repeat;}

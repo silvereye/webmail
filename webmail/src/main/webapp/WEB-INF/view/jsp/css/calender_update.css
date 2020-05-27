@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+table.heading_guest {width: 95%;
+border-spacing: 0px;
+background: #E8E8E8;
+border: 1px solid#ccc;
+border-bottom: none;}
+.guest_content_11{height: 149px;overflow: auto;padding-right: 15px;}
+table.append_guest {position: absolute;
+width: 500px;border-spacing: 0px;}
+.guest_td{width: 73px;}
+.close_guest >img { display:block; margin:0 auto;}
+.close_guest_1 >img{position: relative;
+right: 0px;
+left: 0px;
+display: block;}
+.heading_guest >tbody >tr >td >span{ float:left;}
+.reminder_time{width: 76px !important;}
+.reminder_cal >table >tbody >tr >td >span{float: right;
+color: #C30101;cursor: pointer;
+font-size: 12px;}
+table.new_reminder{ border-spacing:0px;position: absolute;
+background: #fff;width: 500px;}
+table.new_reminder >tbody >tr>td{padding-bottom: 4px;
+border-bottom: 1px solid #ccc;
+padding-top: 4px;}
+table.new_reminder >tbody >tr>td>select{margin-right: 4px;text-transform: capitalize;}
+table.new_reminder >tbody >tr>td>input{margin-right: 4px;}
+.amvalue {
+  padding: 3px;
+}
+.dymaic_am {
+  width: 114px;
+  float: left;
+  height: 128px;
+  overflow: auto;
+  display: none;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.dymaic_pm{width: 74px;
+float: left;display:none;
+height: 128px;
+overflow: auto;
+border: 1px solid #ccc;}
+.remi_date_opt{
+position: absolute;
+top: 112px;
+left: 182px;
+background: #fff;}
+.amvalue:hover { background:#ccc; cursor:pointer;}
+.reminder_cal{ position:relative;}
+.remi_date_opt{}
+.append_reminder >table >tbody>tr>td>select {
+width: 125px !important;margin-left: 4px;
+text-transform: capitalize;
+}
+.append_reminder >table >tbody>tr>td>input[type="text"], select, textarea {
+width: 275px;
+padding: 4px;
+outline: 0px;
+}
+.append_reminder >table >tbody>tr>td{}
+.append_reminder{height: 100px;
+overflow: auto; position:relative;}
+.delete_reminder >img{cursor: pointer;}
+.delete_reminder{cursor: pointer;}
+
+.reminder_cal >table {
+width: 92% !important;
+}
+
+.guest_content_11{ position:relative;}
+.add_name >td >span >img{margin-right: 9px;}
+.table tr td:FIRST-CHILD{
+    font-weight:bold;
+}

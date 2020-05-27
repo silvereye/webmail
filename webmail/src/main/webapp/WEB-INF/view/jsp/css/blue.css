@@ -1,0 +1,45 @@
+.blue .accordion {
+	border-top: 1px solid #013d6c;
+	border-right: 1px solid #013d6c;
+	border-left: 1px solid #013d6c;
+}
+.blue .accordion, .blue .accordion li {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.blue .accordion a {
+
+	color: #7d7d7d;font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+.blue .accordion ul a {
+	height: 31px;
+}
+.blue .accordion a.dcjq-parent, .blue .accordion a.dcjq-parent:hover {
+	
+}
+.blue .accordion a.dcjq-parent.active {
+	background:url(../images/open_menu.png); background-repeat:no-repeat;background-position: left 16px top 20px;
+padding-left: 40px;
+height: 27px;
+}
+.blue .accordion a:hover {
+
+}
+.blue .accordion a:active {
+}
+.dcjq-parent{ background:left 1px top 3px  url(../images/close_menu.png); background-repeat:no-repeat; }
+.blue .accordion a.dcjq-parent{ background: url(../images/close_menu.png);
+background-repeat: no-repeat;
+color: #7d7d7d;
+font-size: 14px;
+background-position: left 16px top 20px;
+padding-left: 40px;
+height: 27px;}
+.blue .accordion a.dcjq-parent > ul { background-image:none;} 
+.dcjq-parent-li ul {
+margin-top: 3px;}
+.left_margin{}
+.dcjq-parent-li ul li a{ padding:0px;}

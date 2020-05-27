@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+.more_product{background: url(../images/more_product.png);
+height: 17px;
+width: 17px;
+float: right;CURSOR: POINTER;
+background-repeat: no-repeat;
+margin-top: 18px;
+margin-right: 19px;}
+.delete_contact_row {
+width: 11px;
+float: right;
+}
+
+/*--------------- /// MORE PROUCTS ----------------*/
+.more_product_content{ width: 226px;
+/* height: 300px; */
+background: #fff;
+position: absolute;
+z-index: 9;
+right: 110px; display:none;
+top: 45px;
+padding-bottom: 5px;
+border: 1px solid #ccc;
+padding: 17px;box-shadow: 0 2px 10px rgba(0,0,0,.2);}
+/******++++++++++  ONLY FOR ARROW ++++++++++++****/
+.arrow_box_1 {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.arrow_box_1:after, .arrow_box_1:before {
+    bottom: 100%;
+    left: 90%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box_1:after {
+    border-color: rgba(136, 183, 213, 0);
+
+    border-width:16px;
+    margin-left: -10px;
+}
+.arrow_box_1:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #eee;
+    border-width:10px;
+    margin-left: -16px;
+}
+
+.arrow_box_2 {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.arrow_box_2:after, .arrow_box_2:before {
+    bottom: 100%;
+    left: 94%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box_2:after {
+    border-color: rgba(136, 183, 213, 0);
+
+    border-width:16px;
+    margin-left: -10px;
+}
+.arrow_box_2:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #eee;
+    border-width:10px;
+    margin-left: -16px;
+}
+/********+++++++++ ONLY FOR ARROW END  ++++++++++ *********/
+.product_1,.product_2,.product_3,.product_4,.product_5,.product_6,.product_7{float: left;
+padding: 11px; border:1px solid #ccc;height: 98px;
+width: 86px;}
+.pro_info{font-size: 12px;
+/* background: #ccc; */
+padding: 0px;line-height: 20px;
+margin-top: 1px;}
+.more_product_content >ul{margin: 0px;
+padding: 0px;}
+.more_product_content >ul >li { list-style-type:none;border: 1px solid #fff;
+border-radius: 2px;
+display: inline-block;
+vertical-align: top; padding:5px;
+margin-bottom: 1px;}
+.more_product_content >ul >li:hover{ border:1px solid #ccc;}
+.more_product_content >ul >li >a {text-decoration: none;}
+span.task_pro{  display:block;margin: 0 auto;margin-top: 8px;}
+.phone_book{  display:block;margin: 0 auto;margin-top: 8px;}
+.folder_pro{ display:block;margin: 0 auto;margin-top: 8px;}
+.calender_prod{  display:block;margin: 0 auto;margin-top: 8px;}
+.web_prod{ display:block;margin: 0 auto;margin-top: 8px;}
+.mail_prod{/*background:url(../images/product_icon/new/web.png); height:60px; width:60px; display:block;margin: 0 auto;margin-top: 8px;*/}
+span.pro_info{ display: block;
+text-align: center;
+text-decoration: none;
+color: #666;}
+.mail_ring{background: #9B59B6;border-radius: 52%;padding: 5px;/*width: 83px;height: 83px;*/width: 50px;
+height: 47px;}
+.calender_ring{background: #E67E22;border-radius: 52%;padding: 5px;width: 50px;
+height: 47px;}
+.contact_ring{background: #354b60;border-radius: 52%;padding: 5px;width: 50px;
+height: 47px;}
+.tasks_ring{background: #d14233;border-radius: 52%;padding: 5px;width: 50px;
+height: 47px;}
+.brief_ring{background-color: rgba(102, 165, 35, 0.8);border-radius: 52%;padding: 5px;width: 50px;
+height: 47px;}
+.web_ring{background: #3498DB;border-radius: 52%;padding: 5px;width: 50px;
+height: 47px;}
+.mail_prod >img{/*margin-top: 6px;margin-left: 13px;*/margin-top: 7px;
+margin-left: 8px;
+width: 34px;}
+.calender_prod >img{margin-left: 8px;
+width: 34px;
+margin-top: -1px;}
+.phone_book >img{margin-left: 8px;
+width: 31px;}
+.task_pro >img{margin-left: 7px;
+width: 35px;
+margin-top: 0px;}
+.folder_pro >img{margin-left: 8px;
+width: 34px;
+margin-top: -3px;}
+.web_prod >img{margin-left: 8px;
+width: 35px;
+margin-top: -2px;}
+.brief_ring >span{ }
+/*--------- STYLE LINE -14 REMOVE Z-index header ,header_inner ------------*/

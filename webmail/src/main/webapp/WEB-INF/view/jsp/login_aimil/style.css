@@ -1,0 +1,13 @@
+body{ margin:0; padding:0; font-family:"Open Sans"}
+
+.aimil-div{ width:100%; position:relative;}
+.aimil-left{ width:160px; height:100%; float:left; position:fixed; left:0; bottom:0; background-image:url(left.jpg); background-attachment:fixed; background-position: left bottom; background-repeat:no-repeat;}
+.aimil-right{width:160px; height:100%; float:left; position:fixed; right:0; bottom:0; background-image:url(right.jpg); background-attachment:fixed; background-position: right bottom; background-repeat:no-repeat;}
+.responsive-image{ width:100%;}
+.responsive-image img{ max-width:100%;}
+.aimil-center{ width: calc(100% - 320px); margin: 0 auto;}
+.aimil-header{box-shadow: 0px 2px 10px #ccc; width:100%; display:table; position:relative; z-index:999; margin-bottom:60px;}
+.aimil-logo{ float:left; margin:20px;}
+.aimil-link{ font-size:14px; color:#4b2504; float:right; margin:20px;}
+.aimil-link a{ text-transform:uppercase; font-weight:600;color:#4b2504; text-decoration:none;}
+.aimil-footer{ font-size:21px; font-weight:600; font-style:italic; text-align:center; background:#e31e24; color:#fff; padding:15px 0; letter-spacing:1px;}

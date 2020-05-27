@@ -1,0 +1,104 @@
+/* style sheets */
+.chat_input,.new_overflow{ position:relative;height:100%;width: 258px;}
+.chat_input_new {
+  position: absolute !important;
+  bottom: -14px !important;
+  text-decoration: none;
+}
+..ui-corner-all {
+  width: 10px !important;
+  /* float: left !important; */
+}
+.ui-icon-minusthick {
+  /* background-position: -64px -128px; */
+  width: 15px;
+  height: 24px;
+ /*  background: #ccc; */
+  display: block;
+  text-align: center;  font-size: 38px;
+  line-height: 18px;
+}
+.chat_minu {
+  float: right;
+  margin-left: 3px;text-decoration: none;
+}
+.ui-chatbox {
+    /* position: fixed; */
+    position: relative;
+     bottom: 22px;
+    padding: 2px;
+    /* background:  #CCCCCC; */
+    z-index: 9999;
+}
+
+.ui-chatbox-titlebar {
+    cursor: pointer;
+    height: 24px;
+    line-height: 22px;
+	font-weight: normal;
+    padding: 3px;
+}
+
+.ui-chatbox-content {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.ui-chatbox-log {
+    padding: 3px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFFFFF;
+}
+
+.ui-chatbox-input {
+    padding: 3px;
+    border-top: 1px solid grey;
+    overflow: hidden;
+    background: #fff none repeat scroll 0 0;
+}
+
+.ui-chatbox-input-box {
+    margin: 5px;
+	font-size: 12px !important;
+    border: 2px solid lightgrey;/* #6699FF */
+    padding: 2px;
+    height: 50px;
+}
+
+.ui-chatbox-icon {
+    float: right;
+}
+
+.ui-chatbox-input-focus {
+    border-color: #6699FF;
+}
+
+.ui-chatbox-msg {
+	
+	
+        /* margin-bottom: -15px; */
+    margin-top: 5px;
+    float: left;
+    clear: both;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-size: 12px;
+    background: #CCE5FB;
+    border-radius: 5px;
+}
+.ui-chatbox-msg > p {
+       margin: 6px 6px;
+}
+/*--------------- NEW CSS FOR NEW DESIGN -------------*/
+.title_name{width: 203px;
+float: left;
+overflow: hidden;
+font-family: arial;
+font-size: 14px;/* text-transform: capitalize; */
+}

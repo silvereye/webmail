@@ -1,0 +1,373 @@
+/*---------------/// TAB STYLE STARED HERE -----------------*/
+.main_tab{}
+.main_tab > ul{ margin:0; padding:0px;}
+.main_tab >ul >li{ float:left;}
+.r7 td.r8, .r7 td.r9 {
+border: none;
+border-bottom: 1px solid #e5e5e5;
+padding: 22px;
+}
+.rc {
+font-weight: bold;
+}
+.r8 {
+padding-left: 8px;
+vertical-align: top;
+width: 20%;
+}
+.r7 {
+font-size: 80%;
+}
+.C6 {
+padding: 1px 2px;
+}
+.C7 {
+vertical-align: top;
+font-size: 80%;
+}
+.cf {
+border-collapse: collapse;
+}
+.Tn {
+padding: 0 20px;
+}
+.rc {
+font-weight: bold;
+}
+.r7 {
+font-size: 80%;
+}
+.sA, .r4 .e, .alP, .ri, .rd {
+text-decoration: none;
+color: #15c;
+}
+.rS {
+font-weight: bold;
+}
+.rS {
+font-weight: bold;
+}
+.r7 {
+font-size: 80%;
+}
+
+
+.azf, .al6, .alC, .alD {
+white-space: nowrap;
+overflow: hidden;
+width: 15em;
+}
+.azf, .al6 {
+margin: 1px;
+border: 0;
+}
+.azf, .al6 {
+padding: 5px 2px;
+}
+.alO {
+font-size: 80%;
+background-color: #f5f5f5;
+}
+.r8 {
+padding-left: 8px;
+vertical-align: top;
+width: 20%;
+}
+.alL {
+padding: 10px 15px 4px;
+font-weight: bold;
+/*border-top: 1px solid #e5e5e5;*/
+}
+.alT {
+padding: 3px 15px;
+}
+.alR {
+font-weight: bold;
+}
+.al0 {
+padding: 0 15px;
+}
+.r7 {
+font-size: 80%;
+}
+.aSY {
+margin-top: 18px;font-size: 80%;
+}
+.aJa {
+font-weight: bold;font-size: 80%;
+}
+.e > a{ font-size: 80%;}
+
+.aI7{
+font-size: 80%;
+}
+.r7 {
+font-size: 80%;
+}
+.CZ {
+padding: 8px 0;
+border-bottom: 1px solid #E8E7E7;
+}
+.yV {
+font-size: 80%;
+white-space: nowrap;
+padding: 3px 0 3px 2px;
+}
+.rG {
+text-align: center;
+font-size: 80%;
+padding: 8px;
+}
+.rQ {
+font-weight: bold;
+}
+.qR {
+margin: 0 8px;
+cursor: default;
+}
+/*:hover{ background:#eee;}*/
+.hidetool{ display:none;}
+.full_width_mail{
+	/* min-height: 600px; */
+}
+.full_mail_content{
+	/* min-height: 600px; */
+}
+.full_width_mail >.mail_content{/* min-height: 600px; */ display:block !important;}
+.full_width_mail >.mail_content >.mail_content_1 {
+font-size: 13px;
+color: #7d7d7d;
+margin-left: 10px; width:100% !important;
+/* padding-left: 24px; */
+}
+.rU {
+text-align: center;
+padding: 5px 0 0 0;
+}
+.r4 {
+background-color: #f5f5f5;
+padding: 4px;
+}
+.rf, .alU, .alW {
+padding: 12px 8px 8px;
+padding-top: 0px;
+}
+.rj {
+font-weight: bold;
+}
+.rg {
+font-size: 80%;
+padding-top: 8px;
+width: 500px;
+}
+.sA, .r4 .e, .alP, .ri, .rd {
+text-decoration: none;
+color: #15c;
+}
+.alU {
+font-size: 80%;
+padding-top: 20px;
+padding-bottom: 15px;
+margin-bottom: 9px;
+border-bottom: 1px solid #e5e5e5;
+}
+.cf {
+border-collapse: collapse;
+}
+.r7 {
+font-size: 80%;
+}
+.Us {
+font-weight: bold;
+font-size: 90%;
+padding: 22px 8px 0;
+}
+.al8, .al7 {
+border-top: 1px solid #e5e5e5;
+font-size: 80%;
+}
+.rn {
+padding: 7px 0 7px 8px;
+vertical-align: top;
+width: 180px;
+}
+.ro {
+border: 1px solid #777;
+}
+.rm {
+padding: 7px 0 7px 10px;
+vertical-align: top;
+width: 320px;
+}
+.rc {
+font-weight: bold;
+}
+.rl {
+padding: 7px 15px;
+vertical-align: top;
+}
+.C7 {
+vertical-align: top;
+}
+.C6 {
+padding: 1px 2px;
+}
+.v9 input {
+font-weight: normal;
+}
+.C6 input {
+position: relative;
+top: 2px;
+}
+.rS {
+font-weight: bold;
+}
+.re {
+padding: 8px 0 8px 8px;
+}
+.rV {
+padding: 5px 0 5px 6px;
+}
+.amc {
+font-weight: bold;
+padding-top: 22px;
+padding-bottom: 0;
+}
+.amc, .su {
+padding-left: 15px;
+}
+.amb {
+border-top: 1px solid #e5e5e5;
+}
+.sr {
+display: inline;
+margin: 5px 0;
+}
+.sj {
+padding: 0 5px;
+vertical-align: bottom;
+}
+.J-J5-Ji {
+position: relative;
+display: inline-block;
+}
+.sl {
+border: solid 2px #f5f5f5;
+outline: 0;
+}
+.si {
+background-color: #f5f5f5;
+border: solid 2px #f5f5f5;
+padding: 5px;
+cursor: pointer;
+}
+.v9 input {
+font-weight: normal;
+}
+.se {
+width: 65px;
+text-align: center;
+margin: 5px 3px 3px 3px;
+}
+.sg {
+cursor: pointer;
+text-decoration: underline;
+overflow: hidden;
+color: #222;
+font-size: 80%;
+}
+.sd, .sq {
+position: relative;
+}
+.sq {
+width: 65px;
+height: 65px;
+border: 1px solid #ccc;
+margin: 5px 3px 3px 3px;
+}
+.sb {
+font-size: 90%;
+width: 100%;
+}
+.sc {
+margin: 15px 0;
+}
+.al9 {
+margin-bottom: 15px;
+padding-left: 15px;
+}
+.NR {
+font-weight: bold;
+font-size: 80%;float: left;
+}
+.NR_1 {
+font-weight: bold;
+float: left;
+}
+.sE {
+width: 130px;
+}
+.v9 input {
+font-weight: normal;
+}
+.default{font-size: 80%;}
+.r7 {
+font-size: 80%;
+}
+input {
+margin:0px !important;float: left;font-size: 100%;
+}
+.al1 {
+margin: 0;
+padding: 0 0 2px 0;
+white-space: nowrap;
+width: 1%;font-size: 80%;
+}
+.sC, .qB {
+font-weight: bold;
+margin: 0;font-size: 80%;
+padding: 0;
+white-space: nowrap;
+width: 1%;
+}
+.r0 {
+margin-top: 8px;
+}
+.Db {
+padding-top: 3px;
+padding-bottom: 0;
+vertical-align: top;
+text-align: left;font-size: 80%;
+font-weight: bold;
+}
+.Da {
+width: 25em;
+font-weight: normal;
+}
+td.sG {
+padding: 2px 0 0 8px;
+}
+.C9{ font-size:80%; font-weight:bold;}
+.CY{ font-size:80%;}
+.setting_pages{position: static !important;
+}
+.dt{font-size: 14pt;
+float: left;
+margin: 0px;
+font-weight: normal;
+line-height: 32px;}
+.setting_scroll{overflow: hidden !important;}
+ul#menu >li.right_menu_1>a {
+margin-top: -1px !important;
+}
+.Ze{ background:#eee;}
+table >tr:hover{ background:#f00;}
+.r_top >.r9{ padding-top:0px !important;}
+.r_top >.r9{ padding-top:0px !important;}
+.right_menu_1 >a:hover{ background:none !important;}
+ul.menu >li >a:hover{ background:none !important;}
+.right_top_pannel {
+/* position: absolute; */
+height: 39px;
+}
+/*-----------------/// TAB STYLE END HERE ------------------*/

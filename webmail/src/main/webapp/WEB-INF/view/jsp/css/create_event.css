@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------/// NEW CALENDAR CSS -------*/
+.select_every,.select_every_day,.select_every_weeks,.select_every_months{width: 53px;}
+.repeat_every_day{ display:none;}
+td.repeat_heading {
+    width: 109px;
+    /* margin-bottom: 10px; */
+}
+input.until_radio {
+    margin: 0px;
+}
+input.count_radio {
+    margin: 0px;
+}
+.repeat_cal table tbody tr {
+    margin-bottom: 13px;
+    height: 32px;
+}
+.repeat_on_week{display:none;}
+.repeat_day_month{display:none;}
+.repeat_every_year{display:none;}
+.repeat_every_week{ display:none;}
+.repeat_every_month{ display:none;}
+.weekly_summary span {
+    display: block;
+    float: left;
+}
+span.weekly_on_text {
+        width: 218px;
+}
+span.weekly_on_text span {
+    
+    line-height: 22px;
+}
+.weekly_text{ line-height: 22px;}
+.hide_month_day,.hide_monthly,.hide_annually,.removeDateYaer{ display:none !important;}
+.weekly_text{ display:none;}
+.summary{    line-height: 30px;}
+/*---------/// NEW CALENDAR CSS -------*/
+

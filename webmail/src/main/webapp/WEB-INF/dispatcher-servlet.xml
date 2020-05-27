@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		 http://www.directwebremoting.org/schema/spring-dwr
+        http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+        
+    <dwr:configuration /> 
+	<mvc:annotation-driven />
+ 
+  
+
+	<context:component-scan base-package="webmail" />
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager" />  
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager1" /> 
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager2" />   
+
+	<mvc:resources location="/WEB-INF/view/jsp/images/favicon.ico" mapping="favicon.ico"  cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/temp/" mapping="temp/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/css/" mapping="css/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/images/" mapping="images/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/js/" mapping="js/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/login_js/" mapping="login_js/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/login_css/" mapping="login_css/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/login_aimil/" mapping="login_aimil/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/ckeditor/" mapping="ckeditor/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/js_file_upload/" mapping="js_file_upload/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/color_picker/" mapping="color_picker/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/setting/" mapping="setting/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/fileupload/" mapping="fileupload/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/chat/" mapping="chat/**" cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/forget_pass/" mapping="forget_pass/**"  cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/logo/" mapping="logo/**"  cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/cmenu/" mapping="cmenu/**"  cache-period="31556926"/>
+	<mvc:resources location="/WEB-INF/view/jsp/wii/" mapping="wii/**"  cache-period="31556926"/>
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/tiles.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+	</bean>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+    <property name="basename" value="classpath:messages" />
+    <property name="defaultEncoding" value="UTF-8" />
+</bean>
+
+<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+    <property name="searchSystemEnvironment" value="true"/>
+    <property name="locations">
+        <list>
+           <value>/WEB-INF/jdbc.properties</value>
+           <value>classpath:*.properties</value>
+        </list>
+    </property>
+</bean>
+	
+	
+	
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${jdbc.driverClassName}"
+        p:url="${jdbc.databaseurl}" p:username="${jdbc.username}"
+        p:password="${jdbc.password}"
+        p:testOnBorrow="true"
+		p:validationQuery="SELECT 1"
+       
+         />
+         
+         	<bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${jdbc.driverClassName}"
+        p:url="${jdbc.databaseurl1}" p:username="${jdbc.username}"
+        p:password="${jdbc.password}"
+        p:testOnBorrow="true"
+		p:validationQuery="SELECT 1"
+      
+         />
+         	
+         	<bean id="dataSource2" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${jdbc.driverClassName}"
+        p:url="${jdbc.databaseurl2}" p:username="${jdbc.username}"
+        p:password="${jdbc.password}"
+        p:testOnBorrow="true"
+		p:validationQuery="SELECT 1"
+      
+         />
+         
+         
+        
+<bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory">  
+ <property name="dataSource" ref="dataSource"></property>  
+ <property name="annotatedClasses">  
+  <list>  
+   <value>webmail.model.Forgetpassword</value>  
+   <value>webmail.model.Shared</value>  
+   <value>webmail.model.Passwordlog</value>  
+   <value>webmail.model.Loginlog</value>  
+  </list>  
+ </property>  
+ <property name="hibernateProperties">  
+ <props>  
+  <prop key="hibernate.dialect">${jdbc.dialect}</prop>  
+  <prop key="hibernate.show_sql">true</prop>  
+  <prop key="hibernate.hbm2ddl.auto">update </prop>      
+  <prop key="hibernate.connection.release_mode">after_transaction </prop> 
+     
+        </props>  
+      </property> 
+     
+      
+</bean>  
+  
+<bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory1">  
+ <property name="dataSource" ref="dataSource1"></property>  
+ <property name="annotatedClasses">  
+  <list>  
+   <value>webmail.model.ChatArchive</value>  
+  </list>  
+ </property>  
+ <property name="hibernateProperties">  
+ <props>  
+  <prop key="hibernate.dialect">${jdbc.dialect}</prop>  
+  <prop key="hibernate.show_sql">true</prop>  
+  <prop key="hibernate.hbm2ddl.auto">update  </prop>    
+   <prop key="hibernate.connection.release_mode">after_transaction </prop> 
+      
+        </props>  
+      </property>  
+     
+      
+</bean>  
+  
+<bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory2">  
+ <property name="dataSource" ref="dataSource2"></property>  
+ <property name="annotatedClasses">  
+  <list>  
+   <value>webmail.model.UserPref</value>  
+  </list>  
+ </property>  
+ <property name="hibernateProperties">  
+ <props>  
+  <prop key="hibernate.dialect">${jdbc.dialect}</prop>  
+  <prop key="hibernate.show_sql">true</prop>  
+  <prop key="hibernate.hbm2ddl.auto">update  </prop>    
+   <prop key="hibernate.connection.release_mode">after_transaction </prop> 
+      
+        </props>  
+      </property>  
+     
+      
+</bean>
+
+
+
+
+	<bean id = "hibernateTransactionManager" class = "org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <property name = "sessionFactory" ref = "sessionFactory" />
+</bean>
+	<bean id = "hibernateTransactionManager1" class = "org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <property name = "sessionFactory" ref = "sessionFactory1" />
+</bean>
+<bean id = "hibernateTransactionManager2" class = "org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <property name = "sessionFactory" ref = "sessionFactory2" />
+</bean>
+	
+	<bean id="webContextFactory" class="org.directwebremoting.WebContextFactory"></bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+</bean>
+	
+	
+</beans>

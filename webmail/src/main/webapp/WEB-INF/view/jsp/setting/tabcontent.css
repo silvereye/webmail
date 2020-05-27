@@ -1,0 +1,177 @@
+/* Tab Content - menucool.com */
+.bt_left {
+       width: 89%;
+    float: left;
+    height: 23px;
+    background-color: #fff;
+    border-bottom: 2px;
+    border-bottom-color: #d8d8d8;
+    border-bottom-style: solid;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+.bt_right {
+       width: 10%;
+    float: right;
+    background-color: #fff !important;
+    height: 23px;
+    border-bottom: 2px;
+    border-bottom-color: #d8d8d8;
+    border-bottom-style: solid;
+    padding-top: 4px;
+    text-align: right;
+    
+}
+.wb_table
+{
+	margin-bottom: 40px;
+}
+.wb_text
+{
+	height: 18px;
+}
+.bw_bt{
+    border: 0;
+    color: #fff;
+    float: left !important;
+    /* margin: 0; */
+    margin-left: 10px !important;
+    /* margin-top: 12px !important; */
+    cursor: pointer;
+    float: left;
+}
+.checklist{
+    min-height: 6em;
+    max-height: 9em;
+    max-width: 40em;
+    overflow: auto;
+    border: 1px solid;
+    position: relative;
+    padding: 0.25em 0.5em;
+    /* margin: 0 1em; */
+    border-color: #c3c2c2;
+}
+.ul_space
+{
+padding: 0 0 0 16px !important;
+}
+div.tabcontents {
+overflow: auto;
+}
+
+ul.tabs
+{
+   /* padding: 7px 0;*/
+  /* padding: 7px 0; */
+  font-size: 0;
+  margin: 0;
+  height: 22px;
+  /* padding-top: 10px; */
+  list-style-type: none;
+  text-align: left;
+  background: #FFF;
+/*   top: 42px; */
+  position: absolute;
+  z-index: 4;
+  right: 0px;
+  left: 0px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+}
+        
+ul.tabs li
+{    display: inline;
+    margin: 0;
+    /* margin-right: 3px; */
+    /* font: normal 12px Verdana; */
+    text-decoration: none;
+    position: relative;
+    /* padding: 7px 16px; */
+    font-weight: 600;
+    /* border: 1px solid #CCC; */
+    /* border-bottom-color: #B7B7B7; */
+    color: #15c;
+    /* background: #F0F0F0 url(tabbg.gif) 0 0 repeat-x; */
+    /* border-radius: 3px 3px 0 0; */
+    outline: none;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    /* padding-left: 2px; */
+    /* padding-right: 5px; */
+    width: 100px;
+    text-align: center;
+    font-size: 13px;
+    
+}
+.setting_active{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    width: 100px !important;
+    background: #f5f5f5;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+	}
+        
+ul.tabs li a
+{
+/* font: normal 12px Verdana; */
+text-decoration: none;
+position: relative;
+padding: 7px 16px; font-weight:600;
+/* border: 1px solid #CCC; */
+/* border-bottom-color: #B7B7B7; */
+color: #15c;
+/*background: #F0F0F0 url(tabbg.gif) 0 0 repeat-x;*/
+/* border-radius: 3px 3px 0 0; */
+outline: none;
+font-size:13px;
+}
+        
+        
+ul.tabs li a:hover
+{
+}
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+    position: relative;
+    top: 0px;
+	color: #222;
+ font-weight:500;
+    border-bottom-color: white;
+}
+ul.tabs li.selected a{ background: #f5f5f5;}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+}
+     
+#view1, #view2, #view3, #view4,#view5,
+
+#view6,
+
+#view7     {
+ margin-top: 36px;
+}
+div.tabcontents
+{
+	position: relative;
+	/* margin-top: 18px; */
+	/* top: 25px; */
+   /* border: 1px solid #B7B7B7;*//* padding: 30px;*/
+    background: #f5f5f5;
+    border-radius: 0 3px 3px 3px;
+	/*padding-top: 23px;
+	height: 78%;
+overflow: auto;
+padding-bottom: 100px;*/padding-bottom: 40px;
+}
+.setting_scroll {
+margin-top:5px;
+}

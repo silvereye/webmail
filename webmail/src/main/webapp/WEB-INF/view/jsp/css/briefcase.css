@@ -1,0 +1,367 @@
+.briefcase_inner > .strip_details span {
+    float: left;
+    font-size: 12px;
+    margin-right: 6px;
+    right: 0px;
+    color: #00476E;
+    font-weight: bold;
+    margin-top: -3px;
+}
+.briefcase_box {
+  position: absolute;
+    background: #fff;
+  top: 7%;
+  bottom: 7%;
+  left: 20%;
+  right: 20%;
+  border: 1px solid #Ccc;
+  z-index: 15;
+}
+
+.mycontact_box {
+  position: absolute;
+    background: #fff;
+  top: 7%;
+  bottom: 7%;
+  left: 20%;
+  right: 20%;
+  border: 1px solid #Ccc;
+  z-index: 15;
+  display: none;
+}
+
+.pop_header_brief {
+  padding: 9px;
+  /* background: #ccc; */
+  font-size: 15px;
+  background: #ddd9d9;
+  background: -moz-linear-gradient(top, #EDEDED 2%, #EDEDED 50%, #ddd9d9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#ddd9d9), color-stop(50%,#EDEDED), color-stop(100%,#ddd9d9));
+  background: -webkit-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -o-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: -ms-linear-gradient(top, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  background: linear-gradient(to bottom, #EDEDED 2%,#EDEDED 50%,#ddd9d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd9d9', endColorstr='#ddd9d9',GradientType=0 );
+  border-bottom: 1px solid #Ccc;
+}
+.briefcase_inner {
+  word-wrap: break-word;
+  position: absolute;
+  top: 36px;
+  bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 20px;  right: 0px;
+  left: 0px;
+}
+.briefcase_inner{}
+.pop_header_brief >span{}
+.pop_header_brief >span {
+  display: block;
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 19px;
+}
+.cancel_briefcase{ cursor:pointer;}
+.briefcase_box{ display:none;}
+.folder_brief {
+  background: url(../images/folder.png);  background-repeat: no-repeat;
+  width: 59px;
+  height: 47px;
+  float: left;
+  list-style-type: none;
+  margin-left: 22px;
+}
+.file_brief{  background: url(../images/pdf.png);
+  width: 60px;
+  height: 62px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 24px;
+  background-size: 45px;}
+.folder_briefcase ul { list-style-type:none; margin:0px; padding:0px;}
+.folder_briefcase ul li{}
+.file_briefcase ul { list-style-type:none; margin:0px; padding:0px;}
+.file_briefcase ul li {
+  /* float: left; */
+  width: 96px;
+  overflow: hidden;
+  margin-bottom: 1px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.clear{ clear:both;}
+.folder_line,.file_line {
+display: block;
+  position: absolute;
+  left: 83px;
+  border-bottom: 1px solid #ccc;
+  right: 9px;
+  top: 9px;
+}
+.folder_name {
+  font-size: 14px;  position: relative;
+}
+.folder_name{}
+.icon_folder {
+  width: 20px;  margin-right: 8px;
+  height: 20px;
+  background: url(../images/open_and_close_folder.png);
+  background-position: 21px -2px,left;
+  /* margin-top: -6px; */
+  float: left;
+}
+.folder_fold{}
+.folder_briefcase,.file_briefcase {
+  height: 40%;
+  overflow: auto;  margin-bottom: 22px;
+}
+.active_folder,.active_file {
+  background-position: 21px -56px,left;
+}
+.folder_briefcase ul li {
+  width: 100px;
+  overflow: hidden;
+  margin-bottom: 4px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 7px;
+}
+.folder_briefcase ul li span{display: block;
+  float: left;
+  /* font-size: 15px; */
+  font-size: 13px;
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  width: 100px;
+      text-align: center;
+  }
+
+.file_briefcase ul li span{display: block;
+  float: left;
+  /* font-size: 15px; */
+  font-size: 13px;
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  width: 100px;
+      text-align: center;
+  }
+.file_briefcase ul li:hover {
+  background: rgba(37, 124, 223, 0.22);
+  border: 2px solid #66a7e8 ;
+}
+.folder_briefcase ul li:hover {
+  background: rgba(37, 124, 223, 0.22);
+  border: 2px solid #66a7e8 ;
+}
+.file_briefcase ul li {
+  border: 2px solid #fff ;
+    padding: 7px;
+}
+.folder_briefcase ul li {
+  border: 2px solid #fff ;
+}
+.active_select{
+ background: rgba(37, 124, 223, 0.22);
+  border: 2px solid #66a7e8 !important;}
+.bottom_option_edms {
+      height: 40px;
+    bottom: 0px;
+    position: absolute;
+    /* top: 0px; */
+    background-color: #E8E8E8;
+    left: 0px;
+    right: 0px;
+    border-top: 1px solid #ccc;
+}
+.bottom_leftbrief {
+    float: left;
+}
+.bottom_leftbrief ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.bottom_leftbrief ul li {
+    float: left;
+}
+.bottom_right {
+    float: right;
+}
+.bottom_right ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.bottom_right ul li {
+    float: left;
+}
+.button_main {
+    padding: 5px;
+    border: 1px solid #BBB;
+    min-width: 62px;
+    text-align: center;
+    margin-left: 23px;
+    cursor: default;
+    margin-right: 21px;
+    margin-top: 6px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+	.insert_line{line-height: 56px;}
+	.center_text_bottom{float: left;
+    position: relative;
+    left: 9px;
+    width: 378px;
+    font-size: 13px;
+    line-height: 17px;
+    top: 12px;
+    color: #f00;}
+	.insert_color{    /* background-color: #2A34A9; */
+    color: #fff;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;}
+	.disable_insert {
+    opacity: 0.3;
+	
+}
+
+
+
+/* thumbnail view */
+
+.blank_image{width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+
+background-position: 3px -2980px;
+background-image: 10px 30px;
+background-size: 57px !important;
+background-repeat: no-repeat;
+
+}
+.new_msexcel{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -2703px;
+background-repeat: no-repeat;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+.new_word{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -436px;
+background-repeat: no-repeat;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+.new_ppt{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -1820px;
+background-image: 10px 30px;
+background-size: 57px !important;
+background-repeat: no-repeat;
+}
+
+.new_pdf{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -1535px;
+background-repeat: no-repeat;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+
+.new_jpg{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -7158px;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+.new_txt{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -2398px;
+
+background-repeat: no-repeat;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+.new_gif{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -5636px;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+
+.new_png{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -1681px;
+background-repeat: no-repeat;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+.new_gif{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length3.png);
+ background-repeat: no-repeat;   
+background-position: 3px -2980px;
+margin: 0 auto;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+
+.new_xml{
+width: 59px;
+height: 74px;
+background: url(../images/folder_length1.png);
+margin: 0 auto;
+background-position: 3px -5636px;
+background-image: 10px 30px;
+background-size: 57px !important;
+}
+
+/* thumbnail view  ends*/

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+     <definition name="inboxTemplate" template="/WEB-INF/tilestemplate/jsp/inboxTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" />
+        <put-attribute name="left" value="/WEB-INF/view/jsp/left.jsp" />
+       <put-attribute name="leftchat" value="/WEB-INF/view/jsp/chat.jsp" />  
+        <put-attribute name="body" value="" />
+ 	 </definition>
+ 	 
+ 	 <definition name="composeTemplate" template="/WEB-INF/tilestemplate/jsp/composeTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/view/jsp/composeheader.jsp" />
+        <put-attribute name="body" value="" />
+ 	 </definition>
+ 	 
+ 	 
+ 	 <definition name="firstinboxTemplate" template="/WEB-INF/tilestemplate/jsp/firstinboxTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/view/jsp/headerfirst.jsp" />
+       <!--  <put-attribute name="left" value="/WEB-INF/view/jsp/left.jsp" /> -->
+      <!--   <put-attribute name="leftchat" value="/WEB-INF/view/jsp/chat.jsp" /> -->
+        <put-attribute name="body" value="" />
+ 	 </definition>  
+
+<definition name="contactTemplate" template="/WEB-INF/tilestemplate/jsp/ContactTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="headercontact" value="/WEB-INF/view/jsp/headercontact.jsp" />
+        <put-attribute name="leftcontacts" value="/WEB-INF/view/jsp/leftcontacts.jsp" />
+      <!-- <put-attribute name="leftchat" value="/WEB-INF/view/jsp/chat.jsp" />  -->
+        <put-attribute name="body" value="" />
+ 	 </definition>
+
+<definition name="calendarTemplate" template="/WEB-INF/tilestemplate/jsp/CalendarTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="headercalendar" value="/WEB-INF/view/jsp/headercalendar.jsp" />
+        <put-attribute name="leftcalendar" value="/WEB-INF/view/jsp/leftcalendar.jsp" />
+     <!--    <put-attribute name="leftchat" value="/WEB-INF/view/jsp/chat.jsp" /> -->
+        <put-attribute name="body" value="" />
+ 	 </definition>
+ 	 
+ 	 <definition name="taskTemplate" template="/WEB-INF/tilestemplate/jsp/TaskTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="headertask" value="/WEB-INF/view/jsp/headertask.jsp" />
+        <put-attribute name="lefttask" value="/WEB-INF/view/jsp/lefttask.jsp" />
+      <!--   <put-attribute name="leftchat" value="/WEB-INF/view/jsp/chat.jsp" />  -->
+        <put-attribute name="body" value="" />
+ 	 </definition>
+
+     <definition name="indexTemplate" template="/WEB-INF/tilestemplate/jsp/indexTemplate.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="body" value="" />
+    </definition> 
+    
+     <definition name="login" extends="indexTemplate">
+        <put-attribute name="title" value="Login | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/login.jsp" />
+    </definition>
+    
+    <definition name="errorPage" extends="indexTemplate">
+        <put-attribute name="title" value="Login | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/errorPage.jsp" />
+    </definition>
+    
+     <definition name="briefcase" extends="indexTemplate">
+        <put-attribute name="title" value="webmail | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/briefcase.jsp" />
+    </definition>
+    
+     <definition name="forget" extends="indexTemplate">
+        <put-attribute name="title" value="Forget Password | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/forget.jsp" />
+    </definition>
+    <definition name="resetpassword" extends="indexTemplate">
+        <put-attribute name="title" value="Reset Password | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/resetpassword.jsp" />
+    </definition>
+    <definition name="recoverassword" extends="indexTemplate">
+        <put-attribute name="title" value="Reset Password | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/resetpassword.jsp" />
+    </definition>
+    
+     <definition name="firstinbox" extends="indexTemplate">
+        <put-attribute name="title" value="First | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/firstinbox.jsp" />
+    </definition>
+    
+    <definition name="viewattachment" extends="indexTemplate">
+        <put-attribute name="title" value="View Attachment | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/viewattachment.jsp" />
+    </definition>
+    <definition name="viewattachmentIMG" extends="indexTemplate">
+        <put-attribute name="title" value="View Attachment | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/viewattachmentIMG.jsp" />
+    </definition>
+    
+    <definition name="nexttab" extends="indexTemplate">
+        <put-attribute name="title" value="Mail Content | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/nexttabdisp.jsp" />
+    </definition>
+    <definition name="mailcntprint" extends="indexTemplate">
+        <put-attribute name="title" value="Print Mail| Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/mailcntprint.jsp" />
+    </definition>
+    
+    <definition name="mailheadercntt" extends="indexTemplate">
+        <put-attribute name="title" value="Mail Header| Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/mailheadercntt.jsp" />
+    </definition>
+    
+     <definition name="tmp" extends="indexTemplate">
+        <put-attribute name="title" value="Login | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/tmp.jsp" />
+    </definition>
+      <definition name="newtmp" extends="indexTemplate">
+        <put-attribute name="title" value="Login | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/newtmp.jsp" />
+    </definition>
+    
+     <definition name="logout" extends="indexTemplate">
+        <put-attribute name="title" value="Logout | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/logout.jsp" />
+    </definition>
+    
+     <definition name="newlogout" extends="indexTemplate">
+        <put-attribute name="title" value="Logout | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/newlogout.jsp" />
+    </definition>
+    
+    <definition name="downloadMailAttachByName" extends="indexTemplate">
+        <put-attribute name="title" value="download | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/downloadmail.jsp" />
+    </definition>
+    
+    <definition name="exportVCFDownload" extends="indexTemplate">
+        <put-attribute name="title" value="download | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/exportVCFDownload.jsp" />
+    </definition>
+    
+    <definition name="compose" extends="indexTemplate">
+        <put-attribute name="title" value="Compose | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/compose.jsp" />
+    </definition>
+    
+     <definition name="chatContent" extends="indexTemplate">
+        <put-attribute name="title" value="Chat | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/chatContent.jsp" />
+    </definition>
+    <definition name="chatout" extends="indexTemplate">
+        <put-attribute name="title" value="Chat | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/chatout.jsp" />
+    </definition>
+    
+    <definition name="setting" extends="indexTemplate">
+        <put-attribute name="title" value="Setting | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/setting.jsp" />
+    </definition>
+    <definition name="sharingPopup" extends="indexTemplate">
+        <put-attribute name="title" value="Setting | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/calsharetemp.jsp" />
+    </definition>
+    <definition name="webmailFolder" extends="indexTemplate">
+        <put-attribute name="title" value="webmail | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/webmailfolder.jsp" />
+    </definition>
+    
+    <definition name="settingtemp" extends="indexTemplate">
+        <put-attribute name="title" value="Setting | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/settingtemp.jsp" />
+    </definition>
+    <definition name="contactshare" extends="indexTemplate">
+        <put-attribute name="title" value="Contact Share | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contactsharetemp.jsp" />
+    </definition>
+    <definition name="foldershare" extends="indexTemplate">
+        <put-attribute name="title" value="Folder Share | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/foldershare.jsp" />
+    </definition>
+    
+     <definition name="contactalldisp" extends="indexTemplate">
+        <put-attribute name="title" value="Contact| Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contactalldisp.jsp" />
+    </definition>
+    
+     <definition name="contactalldispldap" extends="indexTemplate">
+        <put-attribute name="title" value="Contact | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contactalldispldap.jsp" />
+    </definition>
+    
+     <definition name="mycalendar" extends="indexTemplate">
+        <put-attribute name="title" value="Compose | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/mycalendar.jsp" />
+    </definition>
+    
+    <definition name="contactpeople" extends="indexTemplate">
+        <put-attribute name="title" value="Compose | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contactpeople.jsp" />
+    </definition>
+    
+    <definition name="contactdetail" extends="indexTemplate">
+        <put-attribute name="title" value="Compose | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contactdetail.jsp" />
+    </definition>
+    
+    <definition name="inbox" extends="inboxTemplate">
+        <put-attribute name="title" value="Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/inbox.jsp" />
+    </definition>
+    
+    <definition name="composepopup" extends="composeTemplate">
+        <put-attribute name="title" value="Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/composepopup.jsp" />
+    </definition>
+    
+   
+
+ <definition name="contacts" extends="contactTemplate">
+        <put-attribute name="title" value="Contacts | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/contact.jsp" />
+    </definition>
+  
+    <definition name="calendar" extends="calendarTemplate">
+        <put-attribute name="title" value="Calendars | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/calendar.jsp" />
+    </definition>
+   
+   
+   <definition name="tasks" extends="taskTemplate">
+        <put-attribute name="title" value="Tasks | Sandesh Enterprise Messaging Solutions" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/task.jsp" />
+    </definition>
+   
+   <!--  <definition name="userDashboard" extends="indexTemplate">
+        <put-attribute name="title" value="Avi-Oil User Dashboard" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/userDashboard.jsp" />
+    </definition> -->
+<!--     <definition name="index" extends="indexTemplate">
+        <put-attribute name="title" value="Avi-Oil Login" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/index.jsp" />
+    </definition>
+    <definition name="userChat" extends="indexTemplate">
+        <put-attribute name="title" value="Avi-Oil Welcome User" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/userChat.jsp" />
+    </definition>
+    
+    <definition name="adminDashboard" extends="indexTemplate">
+        <put-attribute name="title" value="Avi-Oil Welcome User" />
+        <put-attribute name="body" value="/WEB-INF/view/jsp/adminDashboard.jsp" />
+    </definition> -->
+</tiles-definitions>
